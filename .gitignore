@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Local Audio & Test Outputs (optional, keep samples if you want sample input)
+samples/output_*.wav
+samples/user_sample.wav
+
+# Model Cache & Weights
+*.bin
+*.pth
+*.pt
+.cache/
