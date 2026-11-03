@@ -15,7 +15,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-@app.post('/api/translate')
+@app.post('/api/translate-speech')
 async def translate(target_lang: str = Form(...), 
     audio_file: UploadFile = File(...)):
     temp_input_path = r"C:\Users\csekh\OneDrive\Desktop\SpeakItAllAI\SpeakItAll\backend\samples\input_audio.wav"

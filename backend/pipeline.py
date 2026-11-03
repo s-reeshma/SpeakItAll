@@ -18,7 +18,7 @@ def run_pipeline(t: str, input_file_path: str):
             input_file_path=test_file_path,
             output_file_path=cleaned_profile_path
         )
-    transcript, detected_lang = transcribe_audio(cleaned_profile_path)
+    transcript, detected_lang = transcribe_audio(cleaned_profile_path) 
     translated_input=translate_text(transcript, src_lang=detected_lang, tgt_lang=t)
     t = "zh-cn" if t == "zh" else t
     clone_voice(
